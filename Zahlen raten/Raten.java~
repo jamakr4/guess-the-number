@@ -1,0 +1,29 @@
+
+public class Raten 
+{  
+  int z;
+  
+  public Raten()
+  {
+    z=(int)(Math.random()*10);
+  }
+  public void raten(int pP)
+  {
+ 
+    if (pP==z)
+    {
+      System.out.println("Gewonnen")  
+    }
+    else
+    {
+     if(pP>z)
+     {
+      System.out.println("Die Zahl ist kleiner");
+     }     
+     else
+     {
+       System.out.println("Die Zahl ist größer");
+     } 
+    }
+  }
+}
