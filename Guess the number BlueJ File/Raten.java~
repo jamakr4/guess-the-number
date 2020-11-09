@@ -1,0 +1,58 @@
+import java.util.*;
+public class Raten 
+ { 
+  int z;
+  int versuch;
+ public Raten()
+  {
+   z=(int)(Math.random()*10);
+   versuch=0;
+   }
+
+ public void raten(int pP)
+   { 
+   versuch = versuch+1;
+   //versuch++;
+   //versuch+=1;
+   if (pP==z)
+    {
+     System.out.println("You win") ;
+     System.out.println("You needed" +" "+ versuch +" " + "try/tries");
+    }
+    else
+    {
+    if(pP>z)
+     {
+     System.out.println("Computer: My number is smaller than" + " " + pP);
+      }     
+     else
+     {
+      System.out.println("Computer: My number is bigger than" + " " +pP);
+     } 
+    }
+  }
+  
+ public void neu(int pP)
+  {
+   set "versuch" = 0;
+    versuch = versuch+1;
+   //versuch++;
+   //versuch+=1;
+   if (pP==z)
+    {
+     System.out.println("You win") ;
+     System.out.println("You needed" +" "+ versuch +" " + "try/tries");
+    }
+    else
+    {
+    if(pP>z)
+     {
+     System.out.println("Computer: My number is smaller than" + " " + pP);
+      }     
+     else
+     {
+      System.out.println("Computer: My number is bigger than" + " " +pP);
+     } 
+    }
+  }
+}
