@@ -3,14 +3,15 @@ If you just want the code:
 public class Raten 
  { 
   int z;
-  int i;
+  Versuch;
   public Raten()
   {
     z=(int)(Math.random()*10);
   }
    
   public void raten(int pP)
-  {
+  Versuch =1++;
+{
        if (pP==z)
    {
     System.out.println("You win") ;
@@ -41,5 +42,10 @@ public class Raten
     } catch (InterruptedException e) {
         System.err.format("IOException: %s%n", e);
     }
-   }
+   else 
+    {z=0;
+     (Math.random)*10)
+    }
+  }
  }
+
